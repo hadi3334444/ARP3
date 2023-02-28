@@ -26,8 +26,8 @@ then you can use to find out build GNU type
 6. In order to properly compile programs which use the *libbitmap* library, you first need to notify the **linker** about the location of the shared library. To do that, you can simply add the following line at the end of your ```.bashrc``` file:      
 ```export LD_LIBRARY_PATH="/usr/local/lib:$LD_LIBRARY_PATH"```
 
-## Compiling and running **processA** and **processB**
-The two processes are implemented as UIs through *ncurses* library, therefore you need to compile their source files by linking the shared library via ```-lncurses```. As for the first assignment, exploit the resize event of the windows to get out of situations in which the graphical elements do not properly spawn.
+## Compiling and running all project
+The three processes are implemented as UIs through *ncurses* library, therefore you need to compile their source files by linking the shared library via ```-lncurses```. 
 
 ```
 clear
