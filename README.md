@@ -1,4 +1,4 @@
-# ARP Third Assignment Server file 
+# ARP Third Assignment Server and Client
 
 Base repository for the **ARP Third Assignment Server**.
 The three processes involved in the simulation of the vision system, namely **processAs**, **processAc** and **processB**, are implemented as simple *ncurses windows*. The development of the inter-process communication pipeline, that is the shared memory and one more thing to mention it is the server and client when you enter 1 it actually run the Server process which is ProcessAs and if you choose 2 the client will run.
