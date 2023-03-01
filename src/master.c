@@ -27,7 +27,7 @@ int spawn(const char * program, char * arg_list[]) {
 
 int main() {
   printf("choose which mode you prefer\n");
-  printf("1. Server Mode.\n2. Client Mode.\n"); 
+  printf("1. Server Mode.\n2. Client Mode.\n3.Exit.\n"); 
   int ch;
   scanf("%d",&ch);
   if(ch==1){
@@ -48,6 +48,8 @@ int main() {
   waitpid(pid_procA, &status, 0);
   waitpid(pid_procB, &status, 0);
   printf ("Main program exiting with status %d\n", status);
+  }else{
+      return 0;
   }
   
 
