@@ -27,15 +27,10 @@ then you can use to find out build GNU type
 ```export LD_LIBRARY_PATH="/usr/local/lib:$LD_LIBRARY_PATH"```
 
 ## Compiling and running all project
-The three processes are implemented as UIs through *ncurses* library, therefore you need to compile their source files by linking the shared library via ```-lncurses```. 
+The three processes are implemented as UIs through *ncurses* library, therefore you need to compile their source files by linking the shared library via ```-lncurses```, which I have already done. You can run the whole project with writing the following command in respected ARP3 directory.
 
 ```
-clear
-gcc ./src/master.c -lm -lrt  -o ./bin/master
-gcc ./src/processAs.c -lbmp -lncurses -lm -lrt -o ./bin/processAs
-gcc ./src/processAc.c -lbmp -lncurses -lm -lrt -o ./bin/processAc
-gcc ./src/processB.c -lbmp -lncurses -lm -lrt -o ./bin/processB
-./bin/master
+Bash run.sh
 ```
 
 
